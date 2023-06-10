@@ -1,45 +1,34 @@
-# genshin-dex
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-🎉 Congratulations, your project was successfully generated with [Create Next Stack](https://www.create-next-stack.com/)!
+## Getting Started
 
-To get started, run:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-## Scripts
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The table below provides names and descriptions of the npm scripts available in this project.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Each script is run using `npm run <script-name>`. For example: `npm run dev`.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-| Name           | Description                                                                                                                                                                                                                                     |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `prepare`      | The [`prepare` life cycle script](https://docs.npmjs.com/cli/v7/using-npm/scripts#life-cycle-scripts) is used to set up Git pre-commit hooks when people install dependencies, eg. using `npm install`. This script should not be run manually. |
-| `test`         | Runs tests                                                                                                                                                                                                                                      |
-| `dev`          | Runs the Next.js development server.                                                                                                                                                                                                            |
-| `build`        | Generates a production build.                                                                                                                                                                                                                   |
-| `start`        | Runs the Next.js production server built using `build` script.                                                                                                                                                                                  |
-| `lint`         | Runs [ESLint](https://eslint.org/) to catch linting errors in the source code.                                                                                                                                                                  |
-| `format`       | Formats all source code in the project.                                                                                                                                                                                                         |
-| `format:check` | Checks the formatting of all code in the project.                                                                                                                                                                                               |
+## Learn More
 
-## Technologies
+To learn more about Next.js, take a look at the following resources:
 
-The table below gives an overview of the technologies used in this project, as well as places to learn more about them.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-| Name           | Links                                                                                                                                                                                                           |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Next.js        | [Website](https://nextjs.org/) - [Docs](https://nextjs.org/docs) - [Learn Next.js](https://nextjs.org/learn) - [GitHub](https://github.com/vercel/next.js) - [Wikipedia](https://en.wikipedia.org/wiki/Next.js) |
-| React          | [Website](https://reactjs.org/) - [Docs](https://reactjs.org/docs/getting-started.html) - [GitHub](https://github.com/facebook/react) - [Wikipedia](<https://en.wikipedia.org/wiki/React_(JavaScript_library)>) |
-| TypeScript     | [Website](https://www.typescriptlang.org/) - [Docs](https://www.typescriptlang.org/docs/) - [GitHub](https://github.com/microsoft/TypeScript) - [Wikipedia](https://en.wikipedia.org/wiki/TypeScript)           |
-| Tailwind CSS   | [Website](https://tailwindcss.com/) - [Docs](https://tailwindcss.com/docs) - [GitHub](https://github.com/tailwindlabs/tailwindcss)                                                                              |
-| Framer Motion  | [Website](https://www.framer.com/motion/) - [Docs](https://www.framer.com/docs/) - [GitHub](https://github.com/framer/motion)                                                                                   |
-| React Icons    | [Website](https://react-icons.github.io/react-icons/) - [GitHub](https://github.com/react-icons/react-icons)                                                                                                    |
-| ESLint         | [Website](https://eslint.org/) - [Configuration](https://eslint.org/docs/user-guide/configuring/) - [Rules](https://eslint.org/docs/rules/) - [GitHub](https://github.com/eslint/eslint)                        |
-| Prettier       | [Website](https://prettier.io/) - [Docs](https://prettier.io/docs/en/index.html) - [Options](https://prettier.io/docs/en/options.html) - [GitHub](https://github.com/prettier/prettier)                         |
-| Husky          | [Website](https://typicode.github.io/husky/) - [Docs](https://typicode.github.io/husky/) - [GitHub](https://github.com/typicode/husky)                                                                          |
-| lint-staged    | [Website](https://github.com/okonet/lint-staged) - [GitHub](https://github.com/okonet/lint-staged)                                                                                                              |
-| npm            | [Website](https://www.npmjs.com/) - [CLI Docs](https://docs.npmjs.com/cli/)                                                                                                                                     |
-| GitHub Actions | [Website](https://github.com/features/actions) - [Docs](https://docs.github.com/en/actions) - [Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)                |
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
