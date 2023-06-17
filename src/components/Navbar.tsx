@@ -17,26 +17,26 @@ const Navbar = () => {
 				</Link>
 				<Link
 					href="/"
-					className="text-sm px-7 py-4 hover:bg-blue-300 hover:text-zinc-900 font-extralight h-full"
+					className="navLink"
 				>
 					Dex
 				</Link>
 				<Link
 					href="/"
-					className="text-sm px-7 py-4 hover:bg-blue-300 hover:text-zinc-900 font-extralight h-full"
+					className="navLink"
 				>
 					Explore
 				</Link>
 				<Link
 					href="/"
-					className="text-sm px-7 py-4 hover:bg-blue-300 hover:text-zinc-900 font-extralight h-full"
+					className="navLink"
 				>
 					Github
 				</Link>
 			</div>
 
 			<div>
-				<button className="text-sm px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight h-full tracking-widest">
+				<button className="text-sm px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight h-full tracking-widest hover:bg-white transition-all">
 					Sign Up
 				</button>
 			</div>

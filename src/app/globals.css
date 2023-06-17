@@ -21,16 +21,6 @@
 	src: url("/zh-cn.ttf") format("truetype");
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
-}
-
 * {
 	@apply font-genshin;
 }
@@ -41,4 +31,7 @@ body {
 		43%,
 		oklch(70% 0.5 261) 88% 100%
 	);
+}
+.navLink {
+	@apply text-sm px-7 py-4 text-white hover:bg-blue-300 hover:text-zinc-900 font-extralight h-full transition-all;
 }
