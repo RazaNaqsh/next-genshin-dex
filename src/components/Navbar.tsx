@@ -36,7 +36,7 @@ const Navbar = () => {
 			</div>
 
 			<div>
-				<button className="text-sm px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight h-full">
+				<button className="text-sm px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight h-full tracking-widest">
 					Sign Up
 				</button>
 			</div>
