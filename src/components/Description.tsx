@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Description = () => {
@@ -29,9 +30,11 @@ const Description = () => {
 					Genshin Dex is a Tool where you can search any Character's or Weapon's
 					Data!
 				</p>
-				<button className="ml-16 aqua-button border-2 hover:border-2  hover:scale-95 hover:border-gray-300">
-					Learn More
-				</button>
+				<Link href="/about">
+					<button className="ml-16 aqua-button border-2 hover:border-2  hover:scale-95 hover:border-gray-300">
+						Learn More
+					</button>
+				</Link>
 			</div>
 		</div>
 	);
