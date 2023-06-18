@@ -25,6 +25,7 @@ body {
 }
 * {
 	@apply font-genshin;
+	box-sizing: border-box;
 }
 .modern-gradient {
 	background-image: conic-gradient(
@@ -39,7 +40,7 @@ body {
 }
 
 .flex-center {
-	@apply flex flex-col items-center justify-center;
+	@apply flex items-center justify-center;
 }
 .aqua-button {
 	@apply text-[12px] px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight  tracking-[2px] hover:bg-white transition-all;

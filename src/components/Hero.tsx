@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -14,9 +15,11 @@ const Hero = () => {
 			/>
 			<div className="h-32 w-[110vw] bg-white block absolute -bottom-12 -rotate-3" />
 
-			<div className="flex-center h-full text-white">
+			<div className="flex-center flex-col h-full text-white">
 				<h1 className="text-8xl font-bold">Genshin Dex</h1>
-				<button className="aqua-button mt-4">Get Started</button>
+				<Link href="/dex">
+					<button className="aqua-button mt-4">Get Started</button>
+				</Link>
 			</div>
 		</div>
 	);

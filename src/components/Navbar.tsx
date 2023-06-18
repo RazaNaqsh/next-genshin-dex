@@ -16,7 +16,7 @@ const Navbar = () => {
 					/>
 				</Link>
 				<Link
-					href="/"
+					href="/dex"
 					className="navLink"
 				>
 					Dex
@@ -28,7 +28,7 @@ const Navbar = () => {
 					Explore
 				</Link>
 				<Link
-					href="/"
+					href="https://github.com/RazaNaqsh/next-genshin-dex"
 					className="navLink"
 				>
 					Github
@@ -36,7 +36,7 @@ const Navbar = () => {
 			</div>
 
 			<div>
-				<button className="aqua-button">Sign Up</button>
+				<button className="aqua-button ">Sign Up</button>
 			</div>
 		</nav>
 	);
