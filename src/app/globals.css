@@ -20,7 +20,9 @@
 	font-family: "genshinFont";
 	src: url("/zh-cn.ttf") format("truetype");
 }
-
+body {
+	@apply overflow-x-hidden;
+}
 * {
 	@apply font-genshin;
 }
@@ -34,4 +36,11 @@
 }
 .navLink {
 	@apply text-sm px-7 py-4 text-white hover:bg-blue-300 hover:text-zinc-900 font-extralight h-full transition-all;
+}
+
+.flex-center {
+	@apply flex flex-col items-center justify-center;
+}
+.aqua-button {
+	@apply text-[12px] px-12 py-3 rounded-full bg-blue-300 text-black mr-4 font-extralight  tracking-[2px] hover:bg-white transition-all;
 }
