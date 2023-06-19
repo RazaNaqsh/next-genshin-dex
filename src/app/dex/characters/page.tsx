@@ -1,6 +1,7 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { charProps } from "@/types";
+import Image from "next/image";
 
 async function getCharacters() {
 	const res = await fetch("https://genshinlist.com/api/characters");
@@ -22,9 +23,19 @@ const page = () => {
 					data.map((char: charProps) => (
 						<div
 							id={char.id}
-							className="h-[300px] w-[350px] bg-blue-400"
+							className="h-[200px] w-[250px] bg-blue-400 relative"
 						>
-							<h3>{char.name}</h3>
+							<div className="flex">
+								<Image
+									src={`https://genshinlist.com/assets/img/characters/${char.name.toLowerCase()}.png`}
+									alt={char.name}
+									fill
+									className="antialiased object-contain"
+								/>
+								<h3>{char.name}</h3>
+							</div>
+
+							{/* https://genshinlist.com/assets/img/characters/diluc.png */}
 						</div>
 					))}
 			</div>
