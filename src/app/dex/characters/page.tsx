@@ -31,7 +31,7 @@ const page = () => {
 						<Link href={`dex/characters/${char.id}`}>
 							<div
 								id={char.id}
-								className="h-[370px] w-[300px] bg-blue-400 rounded-3xl p-2 relative z-[-10]"
+								className="h-[370px] w-[300px] text-white bg-blue-400 rounded-3xl p-2 relative z-[-10]"
 							>
 								<div className="flex items-center">
 									<Image
@@ -41,10 +41,19 @@ const page = () => {
 										width={70}
 										className="w-[90px] h-[90px] antialiased object-contain rounded-full shadow-xl"
 									/>
-									<h3 className="z-10 text-white bg-purple-700 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
+									<h3 className="z-10  bg-purple-700 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
 										{char.name}
 									</h3>
 								</div>
+								<div className="p-2">
+									<p>Rarity : {char.rarity} 🌟</p>
+									<div className="space-y-1 text-sm">
+										<p>Vision : {char.vision} </p>
+										<p>Weapon : {char.weapon} </p>
+										<p>Desc : {char.description}</p>
+									</div>
+								</div>
+
 								{/* https://genshinlist.com/assets/img/characters/diluc.png */}
 							</div>
 						</Link>
@@ -53,5 +62,23 @@ const page = () => {
 		</div>
 	);
 };
+//   id: 6,
+
+//     name: 'Diluc',
+
+//     slug: 'diluc',
+
+//     description: 'The tycoon of a winery empire in Mondstadt, unmatched in every possible way.
+//     gender: 'male',
+
+//     birthday: 'April 30th',
+
+//     rarity: 5,
+
+//     vision: 'pyro',
+
+//     weapon: 'claymore',
+
+//     obtain: 'Wish'
 
 export default page;
