@@ -46,8 +46,9 @@ const page = () => {
 									</h3>
 								</div>
 								<div className="p-2">
-									<p>Rarity : {char.rarity} 🌟</p>
-									<div className="space-y-1 text-sm">
+									<p className="pb-1">Rarity : {char.rarity} 🌟</p>
+									<div className="space-y-1 text-sm pt-2 border-t-slate-100 border-t-2">
+										<p>Birthday : {char.birthday} </p>
 										<p>Vision : {char.vision} </p>
 										<p>Weapon : {char.weapon} </p>
 										<p>Desc : {char.description}</p>
