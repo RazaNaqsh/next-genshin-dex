@@ -25,15 +25,15 @@ const page = () => {
 	return (
 		<div className="container m-auto py-10">
 			<h1 className="text-4xl text-center">Weapon List</h1>
-			<div className="grid grid-cols-4 gap-4">
+			<div className="grid grid-cols-4 gap-4 py-4">
 				{data &&
 					data.map((weapon: weaponProps) => (
 						<Link href={`dex/weapons/${weapon.id}`}>
 							<div
 								id={weapon.id}
-								className="h-[350px] w-[300px] bg-green-400 rounded-lg relative z-[-10]"
+								className="h-[370px] w-[300px] bg-green-400 rounded-3xl relative z-[-10] p-2"
 							>
-								<div className="flex">
+								<div className="flex items-center">
 									<Image
 										src={`https://genshinlist.com/assets/img/weapons/${weapon.name
 											.toLowerCase()
@@ -41,9 +41,11 @@ const page = () => {
 										alt={weapon.name}
 										height={70}
 										width={70}
-										className="antialiased object-cover"
+										className="w-[100px] h-[100px] antialiased object-cover rounded-full shadow-xl"
 									/>
-									<h3 className="z-10 text-white">{weapon.name}</h3>
+									<h3 className="z-10 text-white bg-orange-400 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
+										{weapon.name}
+									</h3>
 								</div>
 							</div>
 						</Link>

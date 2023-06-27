@@ -25,23 +25,25 @@ const page = () => {
 	return (
 		<div className="container m-auto py-10">
 			<h1 className="text-4xl text-center">Character List</h1>
-			<div className="grid grid-cols-4 gap-4">
+			<div className="grid grid-cols-4 gap-4 py-4">
 				{data &&
 					data.map((char: charProps) => (
 						<Link href={`dex/characters/${char.id}`}>
 							<div
 								id={char.id}
-								className="h-[350px] w-[300px] bg-blue-400 rounded-lg relative z-[-10]"
+								className="h-[370px] w-[300px] bg-blue-400 rounded-3xl p-2 relative z-[-10]"
 							>
-								<div className="flex">
+								<div className="flex items-center">
 									<Image
 										src={`https://genshinlist.com/assets/img/characters/${char.name.toLowerCase()}.png`}
 										alt={char.name}
 										height={70}
 										width={70}
-										className="antialiased object-contain"
+										className="w-[90px] h-[90px] antialiased object-contain rounded-full shadow-xl"
 									/>
-									<h3 className="z-10 text-white">{char.name}</h3>
+									<h3 className="z-10 text-white bg-purple-700 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
+										{char.name}
+									</h3>
 								</div>
 								{/* https://genshinlist.com/assets/img/characters/diluc.png */}
 							</div>
