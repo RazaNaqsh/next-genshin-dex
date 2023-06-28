@@ -16,7 +16,7 @@ async function getCharacters() {
 	return characters;
 }
 
-const page = ({ params }: Props) => {
+const Char = ({ params }: Props) => {
 	const { data, isLoading, isError, error } = useQuery({
 		queryKey: ["characters"],
 		queryFn: () => getCharacters(),
@@ -55,4 +55,4 @@ const page = ({ params }: Props) => {
 	);
 };
 
-export default page;
+export default Char;

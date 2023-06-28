@@ -10,7 +10,7 @@ async function getCharacters() {
 	return characters;
 }
 
-const page = () => {
+const Character = () => {
 	const { data, isLoading, isError, error } = useQuery({
 		queryKey: ["characters"],
 		queryFn: () => getCharacters(),
@@ -28,7 +28,10 @@ const page = () => {
 			<div className="grid grid-cols-4 gap-4 py-4">
 				{data &&
 					data.map((char: charProps) => (
-						<Link href={`dex/characters/${char.id}`}>
+						<Link
+							href={`dex/characters/${char.id}`}
+							key={char.id}
+						>
 							<div
 								id={char.id}
 								className="h-[370px] w-[300px] text-white bg-blue-400 rounded-3xl p-2 relative z-[-10]"
@@ -63,23 +66,5 @@ const page = () => {
 		</div>
 	);
 };
-//   id: 6,
 
-//     name: 'Diluc',
-
-//     slug: 'diluc',
-
-//     description: 'The tycoon of a winery empire in Mondstadt, unmatched in every possible way.
-//     gender: 'male',
-
-//     birthday: 'April 30th',
-
-//     rarity: 5,
-
-//     vision: 'pyro',
-
-//     weapon: 'claymore',
-
-//     obtain: 'Wish'
-
-export default page;
+export default Character;

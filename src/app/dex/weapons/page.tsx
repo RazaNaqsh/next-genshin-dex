@@ -10,7 +10,7 @@ async function getWeapons() {
 	return weapons;
 }
 
-const page = () => {
+const Weapons = () => {
 	const { data, isLoading, isError, error } = useQuery({
 		queryKey: ["weapons"],
 		queryFn: () => getWeapons(),
@@ -28,7 +28,10 @@ const page = () => {
 			<div className="grid grid-cols-4 gap-4 py-4">
 				{data &&
 					data.map((weapon: weaponProps) => (
-						<Link href={`dex/weapons/${weapon.id}`}>
+						<Link
+							href={`dex/weapons/${weapon.id}`}
+							key={weapon.id}
+						>
 							<div
 								id={weapon.id}
 								className="h-[370px] w-[300px] bg-green-400 rounded-3xl relative z-[-10] p-2 text-white"
@@ -43,7 +46,7 @@ const page = () => {
 										width={70}
 										className="w-[100px] h-[100px] antialiased object-cover rounded-full shadow-xl"
 									/>
-									<h3 className="z-10  bg-orange-400 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
+									<h3 className="z-10  bg-orange-600 w-full ml-1 mr-5 px-4 py-1 rounded-e-2xl">
 										{weapon.name}
 									</h3>
 								</div>
@@ -63,4 +66,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Weapons;
