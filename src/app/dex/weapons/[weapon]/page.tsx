@@ -16,7 +16,7 @@ async function getWeapons() {
 	return weapons;
 }
 
-const weapon = ({ params }: Props) => {
+const Weapon = ({ params }: Props) => {
 	const { data, isLoading, isError, error } = useQuery({
 		queryKey: ["weapons"],
 		queryFn: () => getWeapons(),
@@ -59,4 +59,4 @@ const weapon = ({ params }: Props) => {
 	);
 };
 
-export default weapon;
+export default Weapon;

@@ -27,8 +27,8 @@ const Description = () => {
 				<h2 className="text-2xl">Welcome To</h2>
 				<h1 className="text-5xl tracking-[2px]">Genshin Dex</h1>
 				<p className="text-sm font-extralight w-[50ch] ml-16">
-					Genshin Dex is a Tool where you can search any Character's or Weapon's
-					Data!
+					Genshin Dex is a Tool where you can search any Character`'`s or
+					Weapon`'`s Data!
 				</p>
 				<Link href="/about">
 					<button className="ml-16 aqua-button border-2 hover:border-2  hover:scale-95 hover:border-gray-300">
