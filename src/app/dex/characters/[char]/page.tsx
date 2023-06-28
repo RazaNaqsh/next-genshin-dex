@@ -2,10 +2,11 @@
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import React, { useState } from "react";
+import { charProps } from "@/types";
 
 interface Props {
 	params: {
-		char: number;
+		char: string;
 	};
 }
 
@@ -29,8 +30,10 @@ const page = ({ params }: Props) => {
 		<span>Error...</span>;
 	}
 
-	const charData = data[params.char];
+	const charDataArr = data.filter((char: charProps) => char.id == params.char);
+	const charData = charDataArr[0];
 	console.log(charData);
+
 	return (
 		<div className="container">
 			<div>
@@ -41,7 +44,7 @@ const page = ({ params }: Props) => {
 					width={70}
 					className="w-[90px] h-[90px] antialiased object-contain rounded-full shadow-xl"
 				/>
-				<p>{data[params.char].name}</p>
+				<p>{charData.name}</p>
 				<p>Rarity: {charData.rarity}</p>
 				<p>Birthday : {charData.birthday} </p>
 				<p>Vision : {charData.vision} </p>

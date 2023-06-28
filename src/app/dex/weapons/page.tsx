@@ -6,8 +6,8 @@ import Link from "next/link";
 
 async function getWeapons() {
 	const res = await fetch("https://genshinlist.com/api/weapons");
-	const characters = await res.json();
-	return characters;
+	const weapons = await res.json();
+	return weapons;
 }
 
 const page = () => {
