@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { weaponProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 async function getWeapons() {
 	const res = await fetch("https://genshinlist.com/api/weapons");
@@ -32,8 +33,15 @@ const Weapons = () => {
 							href={`dex/weapons/${weapon.id}`}
 							key={weapon.id}
 						>
-							<div
-								id={weapon.id}
+							<motion.div
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{
+									type: "spring",
+									ease: "easeOut",
+									damping: 10,
+									bounce: 0.4,
+								}}
 								className="h-[370px] w-[300px] bg-green-400 rounded-3xl relative z-[-10] p-2 text-white"
 							>
 								<div className="flex items-center">
@@ -58,7 +66,7 @@ const Weapons = () => {
 										<p>Obtain : {weapon.obtain} </p>
 									</div>
 								</div>
-							</div>
+							</motion.div>
 						</Link>
 					))}
 			</div>

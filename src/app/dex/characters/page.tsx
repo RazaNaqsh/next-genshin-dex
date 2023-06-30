@@ -3,6 +3,7 @@ import { isError, useQuery } from "@tanstack/react-query";
 import { charProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 async function getCharacters() {
 	const res = await fetch("https://genshinlist.com/api/characters");
@@ -32,7 +33,15 @@ const Character = () => {
 							href={`dex/characters/${char.id}`}
 							key={char.id}
 						>
-							<div
+							<motion.div
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{
+									type: "spring",
+									ease: "easeOut",
+									damping: 10,
+									bounce: 0.4,
+								}}
 								id={char.id}
 								className="h-[370px] w-[300px] text-white bg-blue-400 rounded-3xl p-2 relative z-[-10]"
 							>
@@ -59,7 +68,7 @@ const Character = () => {
 								</div>
 
 								{/* https://genshinlist.com/assets/img/characters/diluc.png */}
-							</div>
+							</motion.div>
 						</Link>
 					))}
 			</div>

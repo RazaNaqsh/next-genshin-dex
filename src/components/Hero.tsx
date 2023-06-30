@@ -19,7 +19,7 @@ const Hero = () => {
 
 			<div className="flex-center flex-col h-full text-white">
 				<motion.h1
-					initial={{ opacity: 0, y: 10 }}
+					initial={{ opacity: 0, y: 30 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ ease: "easeInOut" }}
 					className="text-8xl font-bold"
@@ -27,7 +27,14 @@ const Hero = () => {
 					Genshin Dex
 				</motion.h1>
 				<Link href="/dex">
-					<button className="aqua-button mt-4">Get Started</button>
+					<motion.button
+						initial={{ opacity: 0, x: 100 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", damping: 8, delay: 0.5 }}
+						className="aqua-button mt-4"
+					>
+						Get Started
+					</motion.button>
 				</Link>
 			</div>
 		</div>
