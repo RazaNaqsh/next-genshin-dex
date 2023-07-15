@@ -15,7 +15,6 @@ const page = () => {
 					whileHover={{ scale: 1.05, textShadow: "0px 0px 8px rgb(0,100,255)" }}
 					transition={{
 						type: "spring",
-						ease: "easeOut",
 						damping: 10,
 						bounce: 0.4,
 					}}
